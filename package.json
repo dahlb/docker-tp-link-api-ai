@@ -1,0 +1,29 @@
+{
+  "name": "tplink",
+  "version": "0.0.0",
+  "private": true,
+  "description": "tp link scripts",
+  "main": "app.coffee",
+  "scripts": {
+    "start": "app.coffee",
+    "monitor": "nodemon app.coffee",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "/volume1/repos/tplink/"
+  },
+  "engines": {
+    "node": "~4.0"
+  },
+  "author": "Brendan Dahl",
+  "license": "GPLv3",
+  "dependencies": {
+    "actions-on-google": "^1.0.0",
+    "body-parser": "^1.15.2",
+    "coffeescript": "^1.12.4",
+    "express": "^4.13.4",
+    "express-basic-auth": "^1.0.0",
+    "hs100-api": "^0.3.0"
+  }
+}
