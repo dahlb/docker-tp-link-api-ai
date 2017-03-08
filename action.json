@@ -1,122 +1,123 @@
+
 {
-name: "actionPackages/15354526",
-deploymentStatus: {
-state: "NEW",
-previewEndTime: "2017-03-03T21:50:48.504989Z"
-},
-versionLabel: "API.AI generated package for agent tp-link",
-agentInfo: {
-languageCode: "en-US",
-projectId: "tp-link-160301",
-invocationNames: [
-"tp link"
-],
-voiceName: "female_1",
-logoUrl: "https://static.api.ai/assets/images/logo.png"
-},
-actions: [
-{
-description: "Power",
-initialTrigger: {
-intent: "assistant.intent.action.MAIN",
-queryPatterns: [
-{
-queryPattern: "turn the $device:device $power_state:power_state"
-},
-{
-queryPattern: "$power_state:power_state the $device:device"
-}
-]
-},
-inDialogTriggers: [
-{
-intent: "4587ea72-0ed7-44db-8f86-cea8d848d4d0",
-queryPatterns: [
-{
-queryPattern: "turn the $device:device $power_state:power_state"
-},
-{
-queryPattern: "$power_state:power_state the $device:device"
-}
-]
-},
-{
-intent: "RAW_TEXT",
-queryPatterns: [
-{
-queryPattern: "$SchemaOrg_Text:text"
-}
-]
-}
-],
-httpExecution: {
-url: "https://api.api.ai/api/integrations/google?token=400902eb5b95408ea056d281466aefc8&lang=en-US"
-},
-signInRequired: false
-}
-],
-customTypes: [
-{
-name: "$power_state",
-items: [
-{
-key: "on",
-synonyms: [
-"on",
-"power on",
-"turn on",
-"power up",
-"engage",
-"let there be"
-]
-},
-{
-key: "off",
-synonyms: [
-"off",
-"power off",
-"turn off",
-"power down",
-"disengage",
-"smite"
-]
-}
-],
-isDynamicDefined: true
-},
-{
-name: "$device",
-items: [
-{
-key: "Living Room",
-synonyms: [
-"Living Room",
-"Living Room Lights",
-"living room lighting",
-"living room",
-"light"
-]
-},
-{
-key: "Television",
-synonyms: [
-"Television",
-"tv",
-"living room tv"
-]
-},
-{
-key: "Christmas Tree",
-synonyms: [
-"Christmas Tree",
-"christmas tree lights",
-"christmas lights",
-"christmas tree lighting",
-"christmas lighting"
-]
-}
-],
-isDynamicDefined: true
-}
-]
+  "name": "actionPackages/15354526",
+  "deploymentStatus": {
+    "state": "NEW",
+    "previewEndTime": "2017-03-03T21:50:48.504989Z"
+  },
+  "versionLabel": "API.AI generated package for agent tp-link",
+  "agentInfo": {
+    "languageCode": "en-US",
+    "projectId": "tp-link-160301",
+    "invocationNames": [
+      "tp link"
+    ],
+    "voiceName": "female_1",
+    "logoUrl": "https://static.api.ai/assets/images/logo.png"
+  },
+  "actions": [
+    {
+      "description": "Power",
+      "initialTrigger": {
+        "intent": "assistant.intent.action.MAIN",
+        "queryPatterns": [
+          {
+            "queryPattern": "turn the  $device:device   $power_state:power_state"
+          },
+          {
+            "queryPattern": "$power_state:power_state  the  $device:device"
+          }
+        ]
+      },
+      "inDialogTriggers": [
+        {
+          "intent": "4587ea72-0ed7-44db-8f86-cea8d848d4d0",
+          "queryPatterns": [
+            {
+              "queryPattern": "turn the  $device:device   $power_state:power_state"
+            },
+            {
+              "queryPattern": "$power_state:power_state  the  $device:device"
+            }
+          ]
+        },
+        {
+          "intent": "RAW_TEXT",
+          "queryPatterns": [
+            {
+              "queryPattern": "$SchemaOrg_Text:text"
+            }
+          ]
+        }
+      ],
+      "httpExecution": {
+        "url": "https://api.api.ai/api/integrations/google?token\u003d400902eb5b95408ea056d281466aefc8\u0026lang\u003den-US"
+      },
+      "signInRequired": false
+    }
+  ],
+  "customTypes": [
+    {
+      "name": "$power_state",
+      "items": [
+        {
+          "key": "on",
+          "synonyms": [
+            "on",
+            "power on",
+            "turn on",
+            "power up",
+            "engage",
+            "let there be"
+          ]
+        },
+        {
+          "key": "off",
+          "synonyms": [
+            "off",
+            "power off",
+            "turn off",
+            "power down",
+            "disengage",
+            "smite"
+          ]
+        }
+      ],
+      "isDynamicDefined": true
+    },
+    {
+      "name": "$device",
+      "items": [
+        {
+          "key": "Living Room",
+          "synonyms": [
+            "Living Room",
+            "Living Room Lights",
+            "living room lighting",
+            "living room",
+            "light"
+          ]
+        },
+        {
+          "key": "Television",
+          "synonyms": [
+            "Television",
+            "tv",
+            "living room tv"
+          ]
+        },
+        {
+          "key": "Christmas Tree",
+          "synonyms": [
+            "Christmas Tree",
+            "christmas tree lights",
+            "christmas lights",
+            "christmas tree lighting",
+            "christmas lighting"
+          ]
+        }
+      ],
+      "isDynamicDefined": true
+    }
+  ]
 }
